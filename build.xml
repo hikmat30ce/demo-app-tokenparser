@@ -1,0 +1,8 @@
+<project name="demo-app-tokenparser" default="useregex" basedir=".">
+    <target name="useregex">
+		<replace  file="/var/jenkins_home/workspace/demo-app-tokenparser/application.properties" token="@mysql.host@" value="${mysql.host}" />
+		<replace  file="/var/jenkins_home/workspace/demo-app-tokenparser/application.properties" token="@mysql.db@" value="${mysql.db}" />
+		<replace  file="/var/jenkins_home/workspace/demo-app-tokenparser/application.properties" token="@mysql.username@" value="${mysql.username}" />
+		<replace  file="/var/jenkins_home/workspace/demo-app-tokenparser/application.properties" token="@mysql.password@" value="${mysql.password}" />
+    </target>
+</project>
